@@ -3,11 +3,25 @@
 .header {
   border-bottom: 1px solid $gray-line;
   padding: 40px 0;
+  @media (max-width: 720px) {
+    padding: 20px 0 0;
+  }
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 724px) {
+      flex-direction: column;
+    }
+
+    a {
+      @media (max-width: 724px) {
+        align-self: start;
+        margin: 0px 0px 20px 0px;
+      }
+    }
   }
 
   &__logo {
@@ -27,6 +41,15 @@
 
     p {
       color: #7b7b7b;
+    }
+  }
+
+  &__cart {
+    @media (max-width: 724px) {
+      align-self: end;
+    }
+    @media (max-width: 468px) {
+      align-self: center;
     }
   }
 }
