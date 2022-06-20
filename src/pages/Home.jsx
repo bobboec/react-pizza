@@ -39,9 +39,9 @@ function Home() {
           <Categories value={categoryId} onClickCat={(id) => setCategoryId(id)} />
           <Sort
             sortValue={sortType}
-            // sortWay={sortWay}
+            sortWay={sortWay}
             onClickSortType={(sortProperty) => setSortType(sortProperty)}
-            // onClickSortWay={(way) => setSortWay(way)}
+            onClickSortWay={(way) => setSortWay(way)}
           />
         </div>
         <h2 className="content__title"> Все пиццы </h2>
